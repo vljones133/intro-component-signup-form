@@ -110,7 +110,10 @@ input[type='submit'] {
   position: relative !important;
 }
 
-.icon-error-img {
+#first-name-error-icon,
+#last-name-error-icon,
+#email-error-icon,
+#password-error-icon {
   position: absolute;
   height: 20px;
   max-height: 20px;
@@ -129,11 +132,13 @@ input[type='submit'] {
   font-style: italic;
   margin-top: -10px;
   margin-bottom: 15px;
-  display: none;
 }
 
-.empty-email,
-.invalid-email {
+#first-name-error-msg,
+#last-name-error-msg,
+#empty-email-error-msg,
+#invalid-email-error-msg,
+#password-error-msg {
   display: none;
 }
 
