@@ -76,16 +76,33 @@ form {
 }
 
 input {
-  border-style: solid;
-  border-color: #d9d9d9 !important;
-  border-width: 1px;
   border-radius: 3px;
   padding: 14px;
   margin-bottom: 15px;
   font-weight: 600;
+  border-style: solid;
+  border-color: #d9d9d9 !important;
+  border-width: 1px;
 }
 
-input[type='submit'] {
+input.valid {
+  border-style: solid;
+  border-color: #d9d9d9 !important;
+  border-width: 1px;
+}
+
+/* input[type='text'],
+input[type='password'],
+input[type='email'] {
+  background-image: url(./images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-size: 20px 20px;
+  background-position: right;
+  background-position-x: 96%;
+} */
+
+.submit {
   background-color: hsl(154, 59%, 51%);
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -106,11 +123,16 @@ input[type='submit'] {
   font-weight: 700;
 }
 
+/* validation */
+
 .icon-error-div {
   position: relative !important;
+  height: 0px !important;
+  width: 0px !important;
+  float: left !important;
 }
 
-#first-name-error-icon,
+/* #first-name-error-icon,
 #last-name-error-icon,
 #email-error-icon,
 #password-error-icon {
@@ -123,6 +145,16 @@ input[type='submit'] {
   left: 301.602px;
   z-index: auto;
   display: none;
+} */
+
+input.invalid {
+  border: 1px solid hsl(0, 100%, 74%);
+  background-image: url(./images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-size: 20px 20px;
+  background-position: right;
+  background-position-x: 96%;
 }
 
 .error-message {
