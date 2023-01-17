@@ -41,18 +41,51 @@
               placeholder="First Name"
               required
             />
+            <div class="icon-error-div">
+              <img
+                src="./images/icon-error.svg"
+                alt="Error Icon"
+                class="icon-error-img"
+              />
+            </div>
+            <p class="empty-first-name error-message">
+              First Name cannot be empty
+            </p>
             <input
               type="text"
               name="lastname"
               placeholder="Last Name"
               required
             />
+            <div class="icon-error-div">
+              <img
+                src="./images/icon-error.svg"
+                alt="Error Icon"
+                class="icon-error-img"
+              />
+            </div>
+            <p class="empty-last-name error-message">
+              Last Name cannot be empty
+            </p>
             <input
               type="email"
               name="email"
               placeholder="Email Address"
               required
             />
+            <div class="icon-error-div">
+              <img
+                src="./images/icon-error.svg"
+                alt="Error Icon"
+                class="icon-error-img"
+              />
+            </div>
+            <p class="empty-email error-message">
+              Email Address cannot be empty
+            </p>
+            <p class="invalid-email error-message">
+              Looks like this is not an email
+            </p>
             <input
               type="password"
               name="password"
@@ -60,12 +93,20 @@
               minlength="8"
               required
             />
+            <div class="icon-error-div">
+              <img
+                src="./images/icon-error.svg"
+                alt="Error Icon"
+                class="icon-error-img"
+              />
+            </div>
+            <p class="empty-password error-message">Password cannot be empty</p>
             <input type="submit" value="Claim your free trial" />
           </form>
           <!-- <button type="button">Claim your free trial</button> -->
           <p class="disclaimer">
             By clicking the button, you are agreeing to our
-            <a href="url" class='terms-link'>Terms and Services</a>
+            <a href="url" class="terms-link">Terms and Services</a>
           </p>
         </div>
       </div>
