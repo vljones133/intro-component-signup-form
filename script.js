@@ -27,6 +27,7 @@ const checkFirstNameField = () => {
     firstNameInput.className = 'invalid';
   } else {
     firstNameErrorMsg.style.display = 'none';
+    firstNameInput.className = 'valid';
   }
 };
 
@@ -39,6 +40,7 @@ const checkLastNameField = () => {
     lastNameInput.className = 'invalid';
   } else {
     lastNameErrorMsg.style.display = 'none';
+    lastNameInput.className = 'valid';
   }
 };
 
@@ -61,6 +63,7 @@ const checkEmailField = () => {
   } else {
     emptyEmailErrorMsg.style.display = 'none';
     invalidEmailErrorMsg.style.display = 'none';
+    emailInput.className = 'valid';
   }
 };
 
@@ -73,5 +76,6 @@ const checkPasswordField = () => {
     passwordInput.className = 'invalid';
   } else {
     passwordErrorMsg.style.display = 'none';
+    passwordInput.className = 'valid';
   }
 };
