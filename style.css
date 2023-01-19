@@ -31,7 +31,8 @@ a:active {
   font-stretch: 100%;
   align-content: center;
   column-gap: 5%;
-  margin: 0 10%;
+  min-height: 100%;
+  margin: auto 10%;
 }
 
 .column {
@@ -96,6 +97,9 @@ input.valid {
   letter-spacing: 1px;
   box-shadow: rgb(90 168 125 / 70%) 0px -4px 0 inset;
   border: none;
+  /* box-shadow: inset 0 -2px 0 0 rgb(0 0 0 / 20%);
+    color: #ffffff;
+    background-color: #52cc6e; */
 }
 
 .disclaimer {
@@ -150,14 +154,18 @@ input.invalid {
 /* footer */
 
 footer {
-  margin: 20px;
+  position: relative;
+  width: 100%;
+  margin: auto 20px;
   min-height: 25px;
+  bottom: 0;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
