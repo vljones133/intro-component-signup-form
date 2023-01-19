@@ -8,6 +8,10 @@ body {
   height: 100%;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  margin: 0;
 }
 
 button,
@@ -31,7 +35,7 @@ a:active {
   font-stretch: 100%;
   align-content: center;
   column-gap: 5%;
-  min-height: 100%;
+  /* min-height: 100%; */
   margin: auto 10%;
 }
 
@@ -150,14 +154,6 @@ input.invalid {
 
 /* footer */
 
-footer {
-  position: relative;
-  width: 100%;
-  margin: auto 20px;
-  min-height: 25px;
-  bottom: 0;
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -190,9 +186,5 @@ footer {
 
   .try-it-button {
     margin-top: 10%;
-  }
-
-  footer {
-    margin: auto;
   }
 }
