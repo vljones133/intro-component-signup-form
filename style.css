@@ -35,7 +35,6 @@ a:active {
   font-stretch: 100%;
   align-content: center;
   column-gap: 5%;
-  /* min-height: 100%; */
   margin: auto 10%;
 }
 
@@ -64,6 +63,13 @@ button {
   border-radius: 8px;
   margin-bottom: 15px;
   box-shadow: 0 6px 0 0 #66666678;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #4c4483;
+  box-shadow: none;
 }
 
 /* form */
@@ -101,6 +107,11 @@ input.valid {
   letter-spacing: 1px;
   box-shadow: rgb(90 168 125 / 70%) 0px -4px 0 inset;
   border: none;
+}
+
+.submit:hover {
+  background-color: #2eb47a;
+  box-shadow: none;
 }
 
 .disclaimer {
