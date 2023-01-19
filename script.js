@@ -54,11 +54,13 @@ const checkEmailField = () => {
   if (emailInput.value.length === 0) {
     emptyEmailErrorMsg.style.display = 'block';
     emailInput.className = 'invalid';
+    invalidEmailErrorMsg.style.display = 'none';
   } else if (
     !emailInput.value.includes('@') ||
     !emailInput.value.includes('.')
   ) {
     invalidEmailErrorMsg.style.display = 'block';
+    emptyEmailErrorMsg.style.display = 'none';
     emailInput.className = 'invalid';
   } else {
     emptyEmailErrorMsg.style.display = 'none';
