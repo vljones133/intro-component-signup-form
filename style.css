@@ -54,10 +54,6 @@ a:active {
   width: 100%;
 }
 
-.equal-columns > * {
-  flex: 1;
-}
-
 h1,
 p,
 button,
