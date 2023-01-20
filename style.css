@@ -45,7 +45,7 @@ a:active {
   font-stretch: 100%;
   align-content: center;
   column-gap: 5%;
-  margin: auto 10%;
+  margin: auto 11%;
 }
 
 .column {
@@ -59,6 +59,11 @@ p,
 button,
 input[type='submit'] {
   color: white;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.2;
 }
 
 button {
@@ -78,11 +83,15 @@ button:hover {
   box-shadow: none;
 }
 
+.try-it-button {
+  margin-bottom: 20px;
+}
+
 /* form */
 
 .white-bg {
   background-color: white;
-  padding: 25px;
+  padding: 6% 7%;
   border-radius: 8px;
   box-shadow: 0 6px 0 0 #66666678;
 }
@@ -93,8 +102,8 @@ form {
 
 input {
   border-radius: 3px;
-  padding: 14px;
-  margin-bottom: 15px;
+  padding: 15px 25px;
+  margin-bottom: 18px;
   font-weight: 600;
   border-style: solid;
   border-color: #d9d9d9 !important;
@@ -152,6 +161,10 @@ input.invalid {
   background-position-x: 96%;
 }
 
+input#email-input.invalid::placeholder {
+  color: var(--coral) !important;
+}
+
 .error-message {
   text-align: right;
   color: var(--coral);
@@ -192,7 +205,7 @@ input.invalid {
 
   .grid-container {
     grid-auto-flow: row;
-    margin: 15% 5%;
+    margin: 15% 7%;
   }
 
   button {

@@ -25,9 +25,11 @@ const checkFirstNameField = () => {
   if (firstNameInput.value === '') {
     firstNameErrorMsg.style.display = 'block';
     firstNameInput.className = 'invalid';
+    firstNameInput.placeholder = '';
   } else {
     firstNameErrorMsg.style.display = 'none';
     firstNameInput.className = 'valid';
+    firstNameInput.placeholder = 'First Name';
   }
 };
 
@@ -38,9 +40,11 @@ const checkLastNameField = () => {
   if (lastNameInput.value === '') {
     lastNameErrorMsg.style.display = 'block';
     lastNameInput.className = 'invalid';
+    lastNameInput.placeholder = '';
   } else {
     lastNameErrorMsg.style.display = 'none';
     lastNameInput.className = 'valid';
+    lastNameInput.placeholder = 'Last Name';
   }
 };
 
@@ -54,18 +58,21 @@ const checkEmailField = () => {
   if (emailInput.value.length === 0) {
     emptyEmailErrorMsg.style.display = 'block';
     emailInput.className = 'invalid';
+    emailInput.placeholder = 'email@example/com';
     invalidEmailErrorMsg.style.display = 'none';
   } else if (
     !emailInput.value.includes('@') ||
     !emailInput.value.includes('.')
   ) {
     invalidEmailErrorMsg.style.display = 'block';
+    emailInput.placeholder = 'email@example/com';
     emptyEmailErrorMsg.style.display = 'none';
     emailInput.className = 'invalid';
   } else {
     emptyEmailErrorMsg.style.display = 'none';
     invalidEmailErrorMsg.style.display = 'none';
     emailInput.className = 'valid';
+    emailInput.placeholder = 'Email Address';
   }
 };
 
@@ -76,8 +83,10 @@ const checkPasswordField = () => {
   if (passwordInput.value === '') {
     passwordErrorMsg.style.display = 'block';
     passwordInput.className = 'invalid';
+    passwordInput.placeholder = '';
   } else {
     passwordErrorMsg.style.display = 'none';
     passwordInput.className = 'valid';
+    passwordInput.placeholder = 'Password';
   }
 };
