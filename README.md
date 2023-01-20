@@ -1,6 +1,6 @@
 # Frontend Mentor - Intro component with sign up form solution
 
-This is a solution to the [Intro component with sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Intro component with sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -14,9 +14,6 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -27,27 +24,21 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Receive an error message when the `form` is submitted if:
-  - Any `input` field is empty. The message for this error should say *"[Field Name] cannot be empty"*
-  - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*
+  - Any `input` field is empty. The message for this error should say _"[Field Name] cannot be empty"_
+  - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say _"Looks like this is not an email"_
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](..images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/vljones133/intro-component-signup-form](https://github.com/vljones133/intro-component-signup-form)
+- Live Site URL: [https://intro-component-signup-form-plum.vercel.app](https://intro-component-signup-form-plum.vercel.app)
 
 ## My process
+
+This past year, I've been getting chummy with React, Bootstrap, and other styling frameworks. For 3.5 years, before my 5-year coding hiatus, I was a front-end developer who focused mainly on vanilla CSS and JavaScript. My goal with this initial Frontend Mentor project was to make sure I kept those vanilla skills sharp and to ensure I haven't gotten too rusty or dependent on libraries and frameworks. Now that I've completed this project, I am happy to say that I've still got it!
 
 ### Built with
 
@@ -55,60 +46,64 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Responsive layout
+- Vanilla JavaScript
+- Client-side form validation
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+One thing I did do differently this time was create my own CSS variables. In the past, I had used variables that were already set inside templates, but this time I created my own. Just as easy as setting JS variables, and I'll be using them for continuity from here on out!
 
-To see how you can add code snippets, see below:
+Also, in the past, I have deployed projects with Heroku, GitHub Pages, and Netlify. This time I wanted to give Vercel a shot. Easy peasy!
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+Some code highlights:
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+:root {
+  --coral: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue-purple: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+input.invalid {
+  border: 2px solid var(--coral) !important;
+  background-image: url(./images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-size: 20px 20px;
+  background-position: right;
+  background-position-x: 96%;
 }
 ```
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+const form = document.querySelector('form');
+const input = document.getElementsByTagName('input');
+
+window.addEventListener('load', () => {
+  input.className = 'valid';
+});
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+For my next project, I plan to continue working with vanilla JS and DOM, but will also learn and implement SASS/SCSS.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+My favorite tutorial websites:
+
+- freeCodeCamp: [https://www.freecodecamp.org/learn/front-end-development-libraries/#sass](https://www.freecodecamp.org/learn/front-end-development-libraries/#sass)
+
+- Codecademy: [https://www.codecademy.com/learn/learn-sass](https://www.codecademy.com/learn/learn-sass)
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Mozilla Form Validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation) - This helped guide me for custom form validation as I used to rely more heavily on the build-in browser validation with the required tag before.
+- [Mozilla CSS Custom Properties (Variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) - I trust Mozilla as a reference to make sure I'm following best practices.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Valerie Jones](https://vjones.dev/)
+- Frontend Mentor - [@vljones133](https://www.frontendmentor.io/profile/vljones133)
+- LinkedIn - [@valeriejones133](https://www.linkedin.com/in/valeriejones133)
