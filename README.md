@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/vljones133/intro-component-signup-form](https://github.com/vljones133/intro-component-signup-form)
-- Live Site URL: [https://intro-component-signup-form-plum.vercel.app](https://intro-component-signup-form-plum.vercel.app)
+- Live Site URL: [https://intro-component-signup-form-vljones133.vercel.app](https://intro-component-signup-form-vljones133.vercel.app/)
 
 ## My process
 
